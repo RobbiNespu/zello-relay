@@ -1,0 +1,23 @@
+{
+  "_comment": "Copy to config.json and fill in. Never commit the real one.",
+
+  "issuer": "PASTE_YOUR_ISSUER_FROM_DEVELOPERS_ZELLO_COM",
+  "private_key_path": "/config/zello_private_key.pem",
+
+  "half_duplex": true,
+  "log_level": "INFO",
+
+  "channel_a": {
+    "name": "A",
+    "username": "relaybot_a",
+    "password": "bot-a-password",
+    "channel": "My First Channel"
+  },
+
+  "channel_b": {
+    "name": "B",
+    "username": "relaybot_b",
+    "password": "bot-b-password",
+    "channel": "My Second Channel"
+  }
+}

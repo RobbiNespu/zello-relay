@@ -1,0 +1,18 @@
+services:
+  zello-relay:
+    build: .
+    container_name: zello-relay
+    restart: unless-stopped
+    volumes:
+      # config.json and zello_private_key.pem live here, read-only
+      - ./config:/config:ro
+    environment:
+      ZELLO_RELAY_CONFIG: /config/config.json
+      # Alternative to config.json values, if you prefer env/secrets:
+      # ZELLO_ISSUER: ""
+      # ZELLO_PRIVATE_KEY: ""
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
