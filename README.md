@@ -12,6 +12,13 @@ Loop protection is explicit rather than timing-based: each side knows both of
 the relay's account names and never forwards a stream that came from one of
 them.
 
+## Demo
+
+A handheld keyed up on one channel, landing on the other. The log scrolling on
+the monitor behind it is the relay forwarding that stream in real time.
+
+[![zello-relay in use — a handheld transmitting while the relay log scrolls](docs/demo-thumb.jpg)](docs/demo.mp4)
+
 ## What you need first
 
 Two things, and the first one gates everything else.
@@ -70,6 +77,10 @@ Key up on channel A and you should see:
 A -> B: relaying alice (stream 1234 -> 5678, 2 packets buffered)
 A -> B: stream 1234 ended
 ```
+
+A real build and the traffic that follows it:
+
+![docker compose up --build, then docker compose logs -f showing both channels online and streams relaying in both directions](docs/startup-log.png)
 
 ## Configuration
 
@@ -135,4 +146,5 @@ config.example.json   copy to config/config.json
 tests/test_relay.py   offline protocol tests
 Dockerfile            python:3.12-slim, runs as uid 1000
 docker-compose.yml    restart: unless-stopped, ./config mounted read-only
+docs/                 README screenshots and demo clip
 ```
