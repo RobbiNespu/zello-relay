@@ -147,4 +147,16 @@ tests/test_relay.py   offline protocol tests
 Dockerfile            python:3.12-slim, runs as uid 1000
 docker-compose.yml    restart: unless-stopped, ./config mounted read-only
 docs/                 README screenshots and demo clip
+LICENSE               Apache-2.0
+NOTICE                attribution that derivative works must carry forward
 ```
+
+## License
+
+Copyright 2026 Robbi Nespu, licensed under the [Apache License 2.0](LICENSE).
+
+You can use, modify, and redistribute this — commercially included. If you
+redistribute it or ship something built on it, section 4 of the license asks you
+to keep my copyright notice, say which files you changed, and carry forward the
+[`NOTICE`](NOTICE) file. Please credit back to
+<https://github.com/RobbiNespu/zello-relay>.

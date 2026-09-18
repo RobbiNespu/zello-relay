@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+#
+# Copyright 2026 Robbi Nespu <robbinespu@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
 """
 Author : Robbi Nespu <robbinespu@gmail.com>
 Url: https://github.com/RobbiNespu/zello-relay

@@ -1,3 +1,6 @@
+#
+# Copyright 2026 Robbi Nespu <robbinespu@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
 """
 Offline protocol tests: a fake websocket on each side drives real stream
 start/packet/stop sequences through the relay logic. No network, no Zello
